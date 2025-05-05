@@ -1,0 +1,16 @@
+# Explanation of the AI Motion Reconstruction App
+
+This project reconstructs full-body motion using sensor data from a mobile device's IMU sensors. The data is collected from the right leg and combined with a trick name to predict the movement of the entire body.
+
+## Data Flow
+1. **Data Collection**: Sensor data is collected and stored in `.txt` files.
+2. **Data Parsing**: `Data_reading01.py` reads and processes the data.
+3. **Model Training**: `neural_network_model.py` trains a neural network on the processed data.
+4. **Model Testing**: `test_model.py` tests the model's predictions on new data.
+
+## Model Structure
+- **Input**: Right leg gyro, right leg accel, trick name (one-hot encoded)
+- **Output**: Full-body motion (8 sensor blocks, each 3xN)
+
+## Future Enhancements
+- Implement a 3D visualization feature to animate the predicted motion using graphics libraries such as Three.js or Blender.
