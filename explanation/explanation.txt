@@ -1,4 +1,4 @@
-# Explanation of the AI Motion Reconstruction App
+# Explanation of the AI Motion Reconstruction Cliff-Technology
 
 This project reconstructs full-body motion using sensor data from a mobile device's IMU sensors. The data is collected from the right leg and combined with a trick name to predict the movement of the entire body.
 
